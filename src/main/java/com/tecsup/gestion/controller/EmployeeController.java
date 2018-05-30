@@ -16,7 +16,7 @@ import com.tecsup.gestion.services.EmployeeService;
 /**
  * Handles requests for the application home page.
  */
-@Controller
+@Controller 
 public class EmployeeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(EmployeeController.class);
