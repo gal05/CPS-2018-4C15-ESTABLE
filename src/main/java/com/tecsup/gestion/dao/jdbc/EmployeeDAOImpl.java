@@ -20,12 +20,14 @@ import com.tecsup.gestion.model.Employee;
 public class EmployeeDAOImpl implements EmployeeDAO {
 
 	private static final Logger logger = LoggerFactory.getLogger(EmployeeDAOImpl.class);
-
+	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-
+	
+	
 	@Override
+	
 	public Employee findEmployee(int employee_id) throws DAOException, EmptyResultException {
 
 		String query = "SELECT employee_id, login, password, first_name, last_name, salary, department_id "
@@ -48,7 +50,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		}
 	}
 
-
+	
 	@Override
 	public void create(String login, String password, String lastname, String firstname, int salary, int dptId) throws DAOException {
 
@@ -75,6 +77,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 	}
 
+	
 	@Override
 	public void delete(String login) throws DAOException {
 
@@ -89,6 +92,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			throw new DAOException(e.getMessage());
 		}
 	}
+
 
 	@Override
 	public void update(String  login, String password, String lastname, String firstname, int salary, int dptId) throws DAOException {
@@ -105,6 +109,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		}
 	}
 
+
+	
 
 	@Override
 	public Employee findEmployeeByLogin(String login) throws DAOException, EmptyResultException {
@@ -128,6 +134,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		}
 	}
 	
+	
+	
 	@Override
 	public List<Employee> findAllEmployees() throws DAOException, EmptyResultException {
 
@@ -147,6 +155,9 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		}
 	}
 
+	
+	
+	
 	@Override
 	public List<Employee> findEmployeesByName(String name) throws DAOException, EmptyResultException {
 
@@ -169,6 +180,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 		}
 	}
 
+
+	
 
 	public Employee validate(String login, String pwd) throws LoginException, DAOException {
 	

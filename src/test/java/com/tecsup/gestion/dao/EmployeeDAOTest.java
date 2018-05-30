@@ -44,7 +44,7 @@ public class EmployeeDAOTest {
 		logger.info("Antes de cada metodo");
 	}
 	
-	@Test
+	
 	public void testFindEmployeeById() {
 
 		try {
@@ -69,7 +69,7 @@ public class EmployeeDAOTest {
 
 	}
 
-	@Test
+	
 	public void testFindAllEmployees() {
 
 		try {
@@ -89,7 +89,7 @@ public class EmployeeDAOTest {
 		
 	}
 
-	@Test
+	
 	public void testFindEmployeeByLogin() {
 
 		try {
@@ -111,7 +111,7 @@ public class EmployeeDAOTest {
 
 	}
 
-	@Test
+	
 	public void testCreateEmployee() {
 
 		logger.info("--");
@@ -146,7 +146,7 @@ public class EmployeeDAOTest {
 
 	
 	
-	@Test
+	
 	public void testUpdateEmployee() {
 
 		String LOGIN = "jgomez" + (int)(Math.random() * 100);

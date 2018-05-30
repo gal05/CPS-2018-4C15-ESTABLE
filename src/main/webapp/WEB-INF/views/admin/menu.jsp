@@ -26,6 +26,10 @@
 								class="btn btn-primary"> Manager Employees</a>
 							</td>
 							<td>
+								<a href="<%=request.getContextPath()%>/admin/product/prodList/"
+								class="btn btn-primary"> Manager Product</a>
+							</td>
+							<td>
 								<a href="#"
 								class="btn btn-primary"> Logout</a>
 							</td>
